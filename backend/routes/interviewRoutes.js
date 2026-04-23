@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Interview = require("../models/interview");
+const Interview = require("../model/interview");
 
 // START INTERVIEW
 router.get("/start", async (req, res) => {
