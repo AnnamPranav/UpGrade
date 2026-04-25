@@ -1,44 +1,71 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import API from "../services/api";
 
 function InterviewPage() {
+  const location = useLocation();
   const navigate = useNavigate();
-  const [question, setQuestion] = useState('Tell me about yourself.');
-  const [answer, setAnswer] = useState('');
-  const [answers, setAnswers] = useState([]);
+
+  // Get question from StartPage
+  const question = location.state?.question || "No question received";
+
+  const [answer, setAnswer] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async () => {
-    // Store the answer
-    const updatedAnswers = [...answers, { question, answer }];
-    setAnswers(updatedAnswers);
+    try {
+      setLoading(true);
 
-    // Example: Fetch next question from AI backend
-    // try {
-    //   const response = await axios.post('/api/next-question', { answer });
-    //   setQuestion(response.data.question);
-    // } catch (error) {n
-    //   console.error('Error fetching question:', error);
-    // }
+      // Send answer to backend
+      const response = await API.post("/interview/answer", {
+        question,
+        answer,
+      });
 
-    // For now, navigate to results after one question
-    navigate('/result', { state: { answers: updatedAnswers } });
+      // Navigate to result page with response data
+      navigate("/result", {
+        state: {
+          score: response.data.score,
+          feedback: response.data.feedback,
+          question,
+          answer,
+        },
+      });
+
+    } catch (error) {
+      console.error("Error submitting answer:", error);
+      alert("Failed to submit answer. Check backend.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <div className="container">
       <h2>Interview Question</h2>
+
+      {/* Question Display */}
       <div className="question-box">
         <p>{question}</p>
       </div>
+
+      {/* Answer Input */}
       <textarea
         placeholder="Type your answer here..."
         value={answer}
         onChange={(e) => setAnswer(e.target.value)}
         rows={6}
+        style={{ width: "100%", marginTop: "10px" }}
       />
-      <button onClick={handleSubmit} disabled={!answer.trim()}>
-        Submit Answer
+
+      <br /><br />
+
+      {/* Submit Button */}
+      <button
+        onClick={handleSubmit}
+        disabled={!answer.trim() || loading}
+      >
+        {loading ? "Submitting..." : "Submit Answer"}
       </button>
     </div>
   );

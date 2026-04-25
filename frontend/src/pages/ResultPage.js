@@ -1,23 +1,36 @@
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from "react-router-dom";
 
 function ResultPage() {
   const location = useLocation();
   const navigate = useNavigate();
-  const answers = location.state?.answers || [];
+
+  // Get data from InterviewPage
+  const score = location.state?.score;
+  const feedback = location.state?.feedback;
+  const question = location.state?.question;
+  const answer = location.state?.answer;
 
   return (
     <div className="container">
-      <h2>Interview Complete!</h2>
-      <div className="results">
-        {answers.map((item, index) => (
-          <div key={index} className="result-item">
-            <h4>Q: {item.question}</h4>
-            <p>A: {item.answer}</p>
-          </div>
-        ))}
-      </div>
-      <button onClick={() => navigate('/')}>
-        Start New Interview
+      <h2>Interview Result</h2>
+
+      {/* Show Question */}
+      <p><strong>Question:</strong> {question}</p>
+
+      {/* Show User Answer */}
+      <p><strong>Your Answer:</strong> {answer}</p>
+
+      {/* Show Score */}
+      <p><strong>Score:</strong> {score}</p>
+
+      {/* Show Feedback */}
+      <p><strong>Feedback:</strong> {feedback}</p>
+
+      <br />
+
+      {/* Go back button */}
+      <button onClick={() => navigate("/")}>
+        Go Back to Home
       </button>
     </div>
   );
