@@ -1,50 +1,18 @@
 const express = require("express");
 const router = express.Router();
-const Interview = require("../model/interview");
 
 // START INTERVIEW
-router.get("/start", async (req, res) => {
-
-  const question = "Tell me about yourself";
-
-  const newInterview = new Interview({
-    sessionId: Date.now().toString(),
-    questions: [question],
-    answers: [],
-    scores: []
-  });
-
-  await newInterview.save();
-
+router.post("/start", (req, res) => {
   res.json({
-    sessionId: newInterview.sessionId,
-    question: question
+    question: "Tell me about yourself",
   });
 });
 
-
-// ANSWER API
-router.post("/answer", async (req, res) => {
-
-  const { sessionId, answer } = req.body;
-
-  const interview = await Interview.findOne({ sessionId });
-
-  if (!interview) {
-    return res.json({ message: "Session not found" });
-  }
-
-  const score = 7;
-  const feedback = "Good answer, improve clarity";
-
-  interview.answers.push(answer);
-  interview.scores.push(score);
-
-  await interview.save();
-
+// SUBMIT ANSWER
+router.post("/answer", (req, res) => {
   res.json({
-    score,
-    feedback
+    score: 8,
+    feedback: "Good answer",
   });
 });
 

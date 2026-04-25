@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const mongoose = require("mongoose");
+//const mongoose = require("mongoose");
 
 const app = express();
 
@@ -8,9 +8,9 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB connection
-mongoose.connect("mongodb://127.0.0.1:27017/interviewDB")
-.then(() => console.log("MongoDB Connected"))
-.catch(err => console.log(err));
+//mongoose.connect("mongodb://127.0.0.1:27017/interviewDB")
+//.then(() => console.log("MongoDB Connected"))
+//.catch(err => console.log(err));
 
 // Routes
 const interviewRoutes = require("./routes/interviewRoutes");

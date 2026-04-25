@@ -1,44 +1,67 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import API from "../services/api";
 
 function InterviewPage() {
+  const location = useLocation();
   const navigate = useNavigate();
-  const [question, setQuestion] = useState('Tell me about yourself.');
-  const [answer, setAnswer] = useState('');
-  const [answers, setAnswers] = useState([]);
+
+  const question = location.state?.question || "No question received";
+
+  const [answer, setAnswer] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async () => {
-    // Store the answer
-    const updatedAnswers = [...answers, { question, answer }];
-    setAnswers(updatedAnswers);
+    try {
+      setLoading(true);
 
-    // Example: Fetch next question from AI backend
-    // try {
-    //   const response = await axios.post('/api/next-question', { answer });
-    //   setQuestion(response.data.question);
-    // } catch (error) {n
-    //   console.error('Error fetching question:', error);
-    // }
+      // Small delay to show loading text clearly
+      await new Promise((resolve) => setTimeout(resolve, 1500));
 
-    // For now, navigate to results after one question
-    navigate('/result', { state: { answers: updatedAnswers } });
+      const response = await API.post("/interview/answer", {
+        question,
+        answer,
+      });
+
+      navigate("/result", {
+        state: {
+          score: response.data.score,
+          feedback: response.data.feedback,
+          question,
+          answer,
+        },
+      });
+    } catch (error) {
+      console.error("Error evaluating answer:", error);
+      alert("Failed to evaluate answer. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <div className="container">
       <h2>Interview Question</h2>
+
       <div className="question-box">
         <p>{question}</p>
       </div>
+
+      {loading && <p className="loading-text">Evaluating answer...</p>}
+
       <textarea
         placeholder="Type your answer here..."
         value={answer}
         onChange={(e) => setAnswer(e.target.value)}
         rows={6}
+        disabled={loading}
       />
-      <button onClick={handleSubmit} disabled={!answer.trim()}>
-        Submit Answer
+
+      <br />
+      <br />
+
+      <button onClick={handleSubmit} disabled={!answer.trim() || loading}>
+        {loading ? "Evaluating answer..." : "Submit Answer"}
       </button>
     </div>
   );
