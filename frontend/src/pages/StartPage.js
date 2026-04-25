@@ -34,6 +34,7 @@ function StartPage() {
         {loading ? "Loading..." : "Start Interview"}
       </button>
     </div>
+    
   );
 }
 

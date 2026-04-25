@@ -1,0 +1,20 @@
+[33m3dce173[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m [Frontend] UI improved and API flow completed
+[33m9fdcd7f[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m output of emotion)
+[33me8f6d16[m feat: Add integrated face + eye + emotion + head movement detection (Phase 2 complete)
+[33md93863a[m docs: fix face detection output screenshot
+[33m2dc9f5b[m Update README with output screenshot
+[33m8906098[m docs: add face detection output screenshot
+[33me36fda0[m feat: real-time face detection using live webcam
+[33m54f86d8[m Merge pull request #3 from AnnamPranav/backend-dev
+[33md1ec375[m Update interviewRoutes.js
+[33m0fb1ee1[m Create interviewRoutes.js
+[33m2188a7c[m Update and rename backend/models to backend/model/interview.js
+[33m341dfdf[m Create models
+[33mf1c90c6[m Add files via upload
+[33m956cc73[m Rename server.js to  backend/server.js
+[33m8d7543f[m Add files via upload
+[33m1dea756[m Merge pull request #2 from AnnamPranav/opencv-dev
+[33m496fa6a[m feat: implement webcam feed and face detection with bounding box using OpenCV
+[33m4b1bb88[m Merge pull request #1 from AnnamPranav/frontend-dev
+[33m24a18ee[m[33m ([m[1;31morigin/frontend-dev[m[33m, [m[1;32mfrontend-dev[m[33m)[m [Frontend] Added interview page UI
+[33m7930ce3[m[33m ([m[1;31morigin/opencv-dev[m[33m, [m[1;31morigin/dev[m[33m, [m[1;31morigin/backend-dev[m[33m, [m[1;31morigin/ai-dev[m[33m, [m[1;32mdev[m[33m)[m Initial project setup with folder structure
