@@ -4,7 +4,6 @@ function ResultPage() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // Get data from InterviewPage
   const score = location.state?.score;
   const feedback = location.state?.feedback;
   const question = location.state?.question;
@@ -14,24 +13,25 @@ function ResultPage() {
     <div className="container">
       <h2>Interview Result</h2>
 
-      {/* Show Question */}
-      <p><strong>Question:</strong> {question}</p>
+      <p>
+        <strong>Question:</strong> {question || "No question available"}
+      </p>
 
-      {/* Show User Answer */}
-      <p><strong>Your Answer:</strong> {answer}</p>
+      <p>
+        <strong>Your Answer:</strong> {answer || "No answer submitted"}
+      </p>
 
-      {/* Show Score */}
-      <p><strong>Score:</strong> {score}</p>
+      <p>
+        <strong>Score:</strong> {score ?? "N/A"}
+      </p>
 
-      {/* Show Feedback */}
-      <p><strong>Feedback:</strong> {feedback}</p>
+      <p>
+        <strong>Feedback:</strong> {feedback || "No feedback available"}
+      </p>
 
       <br />
 
-      {/* Go back button */}
-      <button onClick={() => navigate("/")}>
-        Go Back to Home
-      </button>
+      <button onClick={() => navigate("/")}>Go Back Home</button>
     </div>
   );
 }
