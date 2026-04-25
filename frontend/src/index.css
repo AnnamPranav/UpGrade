@@ -91,3 +91,8 @@ button:disabled {
   color: #4a6cf7;
   margin-bottom: 8px;
 }
+.loading-text {
+  color: #2563eb;
+  font-weight: 600;
+  margin: 15px 0;
+}

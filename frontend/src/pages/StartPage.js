@@ -10,6 +10,9 @@ function StartPage() {
     try {
       setLoading(true);
 
+      // Small delay to show loading text clearly
+      await new Promise((resolve) => setTimeout(resolve, 1500));
+
       const response = await API.post("/interview/start");
 
       navigate("/interview", {
@@ -19,7 +22,7 @@ function StartPage() {
       });
     } catch (error) {
       console.error("Error starting interview:", error);
-      alert("Failed to start interview. Please check backend server.");
+      alert("Failed to generate question. Please check backend.");
     } finally {
       setLoading(false);
     }
@@ -30,11 +33,12 @@ function StartPage() {
       <h1>AI Powered Mock Interview</h1>
       <p>Practice your interview with AI-powered feedback.</p>
 
+      {loading && <p className="loading-text">Generating question...</p>}
+
       <button onClick={handleStart} disabled={loading}>
-        {loading ? "Loading..." : "Start Interview"}
+        {loading ? "Generating question..." : "Start Interview"}
       </button>
     </div>
-    
   );
 }
 

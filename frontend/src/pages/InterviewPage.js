@@ -6,7 +6,6 @@ function InterviewPage() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // Get question from StartPage
   const question = location.state?.question || "No question received";
 
   const [answer, setAnswer] = useState("");
@@ -16,13 +15,14 @@ function InterviewPage() {
     try {
       setLoading(true);
 
-      // Send answer to backend
+      // Small delay to show loading text clearly
+      await new Promise((resolve) => setTimeout(resolve, 1500));
+
       const response = await API.post("/interview/answer", {
         question,
         answer,
       });
 
-      // Navigate to result page with response data
       navigate("/result", {
         state: {
           score: response.data.score,
@@ -31,10 +31,9 @@ function InterviewPage() {
           answer,
         },
       });
-
     } catch (error) {
-      console.error("Error submitting answer:", error);
-      alert("Failed to submit answer. Check backend.");
+      console.error("Error evaluating answer:", error);
+      alert("Failed to evaluate answer. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -44,28 +43,25 @@ function InterviewPage() {
     <div className="container">
       <h2>Interview Question</h2>
 
-      {/* Question Display */}
       <div className="question-box">
         <p>{question}</p>
       </div>
 
-      {/* Answer Input */}
+      {loading && <p className="loading-text">Evaluating answer...</p>}
+
       <textarea
         placeholder="Type your answer here..."
         value={answer}
         onChange={(e) => setAnswer(e.target.value)}
         rows={6}
-        style={{ width: "100%", marginTop: "10px" }}
+        disabled={loading}
       />
 
-      <br /><br />
+      <br />
+      <br />
 
-      {/* Submit Button */}
-      <button
-        onClick={handleSubmit}
-        disabled={!answer.trim() || loading}
-      >
-        {loading ? "Submitting..." : "Submit Answer"}
+      <button onClick={handleSubmit} disabled={!answer.trim() || loading}>
+        {loading ? "Evaluating answer..." : "Submit Answer"}
       </button>
     </div>
   );
