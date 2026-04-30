@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/AnnamPranav/UpGrade/issues"
   },
-  "homepage": "https://github.com/AnnamPranav/UpGrade#readme"
+  "homepage": "https://github.com/AnnamPranav/UpGrade#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "node-fetch": "^3.3.2"
+  }
 }
