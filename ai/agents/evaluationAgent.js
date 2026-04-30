@@ -3,9 +3,7 @@ import { safeParseJSON, fallbackResponse } from "./utils.js";
 
 export async function evaluateAnswer(question, answer) {
   const prompt = `
-You are an API.
-
-Evaluate the candidate answer.
+You are an API that evaluates interview answers.
 
 Question:
 ${question}
@@ -13,14 +11,20 @@ ${question}
 Answer:
 ${answer}
 
-Rules:
-- Score must be integer (0 to 10)
-- Feedback must be short (1-2 lines)
+Scoring Rules:
+- 0–2 → incorrect / irrelevant
+- 3–5 → partially correct
+- 6–8 → correct but incomplete
+- 9–10 → correct and well explained
 
-IMPORTANT:
-Return ONLY valid JSON.
-No explanation.
-No markdown.
+Rules:
+- Score must be integer (0–10)
+- Feedback must be short (1–2 lines)
+
+STRICT:
+- Return ONLY JSON
+- No explanation
+- No markdown
 
 {
   "score": number,

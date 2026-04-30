@@ -1,20 +1,35 @@
 import { generateQuestion } from "./questionAgent.js";
 import { evaluateAnswer } from "./evaluationAgent.js";
 
-async function run() {
-  console.log("🚀 Day 3 Testing...");
+async function testDifficulty() {
+  console.log("🚀 Testing Difficulty Levels...\n");
 
-  // Step 1: Generate Question
-  const q = await generateQuestion("Frontend", "easy");
-  console.log("Question:", q);
+  const easy = await generateQuestion("Frontend", "easy");
+  console.log("Easy:", easy);
 
-  // Step 2: Evaluate Answer
-  const evalRes = await evaluateAnswer(
-    q.question,
-    "React is a JavaScript library used for building UI"
-  );
+  const medium = await generateQuestion("Frontend", "medium");
+  console.log("Medium:", medium);
 
-  console.log("Evaluation:", evalRes);
+  const hard = await generateQuestion("Frontend", "hard");
+  console.log("Hard:", hard);
 }
 
-run();
+testDifficulty();
+
+async function testEvaluation() {
+  const question = "What is JavaScript?";
+
+  const bad = await evaluateAnswer(question, "I don't know");
+  console.log("Bad Answer:", bad);
+
+  const medium = await evaluateAnswer(question, "JS is a programming language");
+  console.log("Medium Answer:", medium);
+
+  const good = await evaluateAnswer(
+    question,
+    "JavaScript is a scripting language used for web development, enabling dynamic content"
+  );
+  console.log("Good Answer:", good);
+}
+
+testEvaluation();

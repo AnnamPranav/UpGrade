@@ -3,21 +3,26 @@ import { safeParseJSON, fallbackResponse } from "./utils.js";
 
 export async function generateQuestion(role, difficulty) {
   const prompt = `
-You are an API.
-
-Generate ONE interview question.
+You are an API that generates interview questions.
 
 Role: ${role}
 Difficulty: ${difficulty}
 
-Rules:
-- Only 1 question
-- No explanation
-- No code
+Difficulty Rules:
+- easy → basic concepts, definitions
+- medium → practical + moderate logic
+- hard → advanced concepts, problem-solving
 
-IMPORTANT:
-Return ONLY valid JSON.
-No extra text.
+Rules:
+- Only ONE question
+- No explanation
+- No code unless required
+- Keep it relevant to role
+
+STRICT:
+- Return ONLY valid JSON
+- No extra text
+- No markdown
 
 {
   "question": "..."
