@@ -1,30 +1,35 @@
 import { callAI } from "./aiService.js";
 import { safeParseJSON, fallbackResponse } from "./utils.js";
 
-export async function evaluateAnswer(question, answer) {
-  const prompt = `
-You are an API that evaluates interview answers.
+const EVALUATION_PROMPT = (question, answer) => `
+You are a strict but fair interview evaluator.
 
 Question:
 ${question}
 
-Answer:
+Candidate Answer:
 ${answer}
 
-Scoring Rules:
-- 0–2 → incorrect / irrelevant
-- 3–5 → partially correct
-- 6–8 → correct but incomplete
-- 9–10 → correct and well explained
+Evaluation Logic:
 
-Rules:
-- Score must be integer (0–10)
-- Feedback must be short (1–2 lines)
+Step 1: Relevance
+- If answer is unrelated → score 0–2
 
-STRICT:
+Step 2: If relevant, evaluate quality:
+- 3–5 → basic / incomplete
+- 6–7 → correct but lacks depth
+- 8–9 → strong and well explained
+- 10 → complete and precise
+
+Important Rules:
+- Do NOT give same score for different quality answers
+- Strong answers MUST score higher than average answers
+- Only give 8+ if explanation is detailed and clear
+- Reward correct ideas even if not perfect
+
+Output Rules:
 - Return ONLY JSON
-- No explanation
-- No markdown
+- No explanation outside JSON
 
 {
   "score": number,
@@ -32,11 +37,28 @@ STRICT:
 }
 `;
 
-  const response = await callAI(prompt);
+export async function evaluateAnswer(question, answer) {
+  const prompt = EVALUATION_PROMPT(question, answer);
 
-  const data = safeParseJSON(response);
+  let response = await callAI(prompt);
+  let data = safeParseJSON(response);
 
-  if (!data || data.score === undefined) {
+  // Retry once
+  if (
+    !data ||
+    typeof data.score !== "number" ||
+    typeof data.feedback !== "string"
+  ) {
+    response = await callAI(prompt);
+    data = safeParseJSON(response);
+  }
+
+  // Final fallback
+  if (
+    !data ||
+    typeof data.score !== "number" ||
+    typeof data.feedback !== "string"
+  ) {
     return fallbackResponse("evaluation");
   }
 

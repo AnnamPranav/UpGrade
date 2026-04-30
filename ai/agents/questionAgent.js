@@ -1,39 +1,46 @@
 import { callAI } from "./aiService.js";
 import { safeParseJSON, fallbackResponse } from "./utils.js";
 
-export async function generateQuestion(role, difficulty) {
-  const prompt = `
+const QUESTION_PROMPT = (role, difficulty) => `
 You are an API that generates interview questions.
 
+Generate a ${difficulty} level interview question.
+
 Role: ${role}
-Difficulty: ${difficulty}
 
 Difficulty Rules:
-- easy → basic concepts, definitions
-- medium → practical + moderate logic
-- hard → advanced concepts, problem-solving
+- easy → basic concepts
+- medium → moderate reasoning
+- hard → advanced concepts
 
 Rules:
 - Only ONE question
 - No explanation
-- No code unless required
-- Keep it relevant to role
+- No markdown
 
 STRICT:
-- Return ONLY valid JSON
-- No extra text
-- No markdown
+Return ONLY valid JSON.
 
 {
   "question": "..."
 }
 `;
 
-  const response = await callAI(prompt);
+export async function generateQuestion(role, difficulty) {
+  const prompt = QUESTION_PROMPT(role, difficulty);
 
-  const data = safeParseJSON(response);
+  // 🔹 First attempt
+  let response = await callAI(prompt);
+  let data = safeParseJSON(response);
 
-  if (!data || !data.question) {
+  // 🔥 Retry if invalid
+  if (!data || typeof data.question !== "string") {
+    response = await callAI(prompt);
+    data = safeParseJSON(response);
+  }
+
+  // 🔥 Final fallback
+  if (!data || typeof data.question !== "string") {
     return fallbackResponse("question");
   }
 

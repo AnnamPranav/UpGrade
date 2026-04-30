@@ -1,35 +1,29 @@
 import { generateQuestion } from "./questionAgent.js";
 import { evaluateAnswer } from "./evaluationAgent.js";
 
-async function testDifficulty() {
-  console.log("🚀 Testing Difficulty Levels...\n");
+async function runTests() {
+  console.log("🚀 Final Test...\n");
 
-  const easy = await generateQuestion("Frontend", "easy");
-  console.log("Easy:", easy);
+  const q = await generateQuestion("Frontend", "medium");
+  console.log("Question:", q, "\n");
 
-  const medium = await generateQuestion("Frontend", "medium");
-  console.log("Medium:", medium);
-
-  const hard = await generateQuestion("Frontend", "hard");
-  console.log("Hard:", hard);
-}
-
-testDifficulty();
-
-async function testEvaluation() {
-  const question = "What is JavaScript?";
-
-  const bad = await evaluateAnswer(question, "I don't know");
+  // ❌ Bad answer
+  const bad = await evaluateAnswer(q.question, "I don't know");
   console.log("Bad Answer:", bad);
 
-  const medium = await evaluateAnswer(question, "JS is a programming language");
-  console.log("Medium Answer:", medium);
-
-  const good = await evaluateAnswer(
-    question,
-    "JavaScript is a scripting language used for web development, enabling dynamic content"
+  // ⚠️ Average answer
+  const avg = await evaluateAnswer(
+    q.question,
+    "It is used in frontend applications"
   );
-  console.log("Good Answer:", good);
+  console.log("Average Answer:", avg);
+
+  // ✅ Strong answer (proper one)
+  const good = await evaluateAnswer(
+    q.question,
+    "This can be implemented by filtering a predefined list based on user input using string matching. We can use debouncing to optimize performance and display top suggestions dynamically as the user types."
+  );
+  console.log("Strong Answer:", good);
 }
 
-testEvaluation();
+runTests();
