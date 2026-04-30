@@ -11,9 +11,17 @@ const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
  * Tries NVIDIA NIM first → fallback to OpenAI
  */
 export async function callAI(prompt) {
-  const response = await callNIM(prompt);
-  console.log("Using NIM ONLY ✅");
-  return response;
+  try {
+    const response = await callNIM(prompt);
+    console.log("Using NIM ONLY ✅");
+    return response;
+  } catch (err) {
+    console.log("NIM failed ❌");
+
+    return JSON.stringify({
+      error: "AI service unavailable"
+    });
+  }
 }
 
 /**
@@ -34,17 +42,21 @@ async function callNIM(prompt) {
           content: prompt
         }
       ],
-      temperature: 0.7,
-      max_tokens: 500
+      temperature: 0.3,
+      max_tokens: 150
     })
   });
 
   const text = await response.text();
 
   if (!response.ok) {
-    console.error("NIM RAW ERROR:", text);
-    throw new Error(`NIM API error: ${response.status}`);
-  }
+  console.error("NIM RAW ERROR:", text);
+
+  // return fallback JSON instead of crashing
+  return JSON.stringify({
+    error: "NIM API failed"
+  });
+}
 
   const data = JSON.parse(text);
 

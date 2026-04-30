@@ -2,17 +2,19 @@ import { generateQuestion } from "./questionAgent.js";
 import { evaluateAnswer } from "./evaluationAgent.js";
 
 async function run() {
-  console.log("🚀 Testing prompts...");
+  console.log("🚀 Day 3 Testing...");
 
+  // Step 1: Generate Question
   const q = await generateQuestion("Frontend", "easy");
   console.log("Question:", q);
 
-  const result = await evaluateAnswer(
+  // Step 2: Evaluate Answer
+  const evalRes = await evaluateAnswer(
     q.question,
-    "API is interface"
+    "React is a JavaScript library used for building UI"
   );
 
-  console.log("Evaluation (PARSED):", result);
+  console.log("Evaluation:", evalRes);
 }
 
 run();

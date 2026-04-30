@@ -1,9 +1,9 @@
 import { callAI } from "./aiService.js";
-import { safeParseJSON } from "./utils.js";
+import { safeParseJSON, fallbackResponse } from "./utils.js";
 
-// Prompt inside file
-const EVALUATION_PROMPT = (question, answer) => `
-You are an API that ONLY returns JSON.
+export async function evaluateAnswer(question, answer) {
+  const prompt = `
+You are an API.
 
 Evaluate the candidate answer.
 
@@ -17,13 +17,10 @@ Rules:
 - Score must be integer (0 to 10)
 - Feedback must be short (1-2 lines)
 
-STRICT INSTRUCTIONS:
-- DO NOT explain anything
-- DO NOT include markdown
-- DO NOT include code
-- DO NOT include text outside JSON
-
-Return ONLY this format:
+IMPORTANT:
+Return ONLY valid JSON.
+No explanation.
+No markdown.
 
 {
   "score": number,
@@ -31,15 +28,12 @@ Return ONLY this format:
 }
 `;
 
-export async function evaluateAnswer(question, answer) {
-  const prompt = EVALUATION_PROMPT(question, answer);
-
   const response = await callAI(prompt);
 
   const data = safeParseJSON(response);
 
-  if (!data) {
-    throw new Error("Invalid JSON from Evaluation Agent");
+  if (!data || data.score === undefined) {
+    return fallbackResponse("evaluation");
   }
 
   return data;

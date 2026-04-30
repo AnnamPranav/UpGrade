@@ -1,10 +1,11 @@
 import { callAI } from "./aiService.js";
+import { safeParseJSON, fallbackResponse } from "./utils.js";
 
-// Prompt inside file
-const QUESTION_PROMPT = (role, difficulty) => `
-You are a technical interviewer.
+export async function generateQuestion(role, difficulty) {
+  const prompt = `
+You are an API.
 
-Generate ONE question.
+Generate ONE interview question.
 
 Role: ${role}
 Difficulty: ${difficulty}
@@ -23,16 +24,13 @@ No extra text.
 }
 `;
 
-export async function generateQuestion(role, difficulty) {
-  const prompt = QUESTION_PROMPT(role, difficulty);
-
   const response = await callAI(prompt);
 
-  console.log("Question RAW:", response);
+  const data = safeParseJSON(response);
 
-  try {
-    return JSON.parse(response);
-  } catch (err) {
-    throw new Error("Invalid JSON from Question Agent");
+  if (!data || !data.question) {
+    return fallbackResponse("question");
   }
+
+  return data;
 }
