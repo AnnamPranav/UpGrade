@@ -4,17 +4,19 @@ import { callAI } from "./aiService.js";
 const QUESTION_PROMPT = (role, difficulty) => `
 You are a technical interviewer.
 
-Generate ONE interview question based on:
-- Role: ${role}
-- Difficulty: ${difficulty}
+Generate ONE question.
+
+Role: ${role}
+Difficulty: ${difficulty}
 
 Rules:
-- Ask only ONE question
-- Do NOT give answer
-- Keep it clear
+- Only 1 question
+- No explanation
+- No code
 
 IMPORTANT:
-Return ONLY valid JSON. No extra text.
+Return ONLY valid JSON.
+No extra text.
 
 {
   "question": "..."

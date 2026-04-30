@@ -1,29 +1,18 @@
-import { callAI } from "./aiService.js";
-import { extractJSON } from "./utils.js";
+import { generateQuestion } from "./questionAgent.js";
+import { evaluateAnswer } from "./evaluationAgent.js";
 
-async function testAPI() {
-  console.log("🚀 Starting test...");
+async function run() {
+  console.log("🚀 Testing prompts...");
 
-  try {
-    const response = await callAI(`
-Return ONLY valid JSON.
-Do NOT add explanation.
-Do NOT add code.
+  const q = await generateQuestion("Frontend", "easy");
+  console.log("Question:", q);
 
-{
-  "status": "ok"
-}
-`);
+  const result = await evaluateAnswer(
+    q.question,
+    "API is interface"
+  );
 
-    console.log("RAW RESPONSE:", response);
-
-    const data = extractJSON(response);
-
-    console.log("PARSED JSON:", data);
-
-  } catch (err) {
-    console.error("ERROR:", err.message);
-  }
+  console.log("Evaluation (PARSED):", result);
 }
 
-testAPI();
+run();

@@ -1,10 +1,11 @@
 import { callAI } from "./aiService.js";
+import { safeParseJSON } from "./utils.js";
 
 // Prompt inside file
 const EVALUATION_PROMPT = (question, answer) => `
-You are an expert technical interviewer.
+You are an API that ONLY returns JSON.
 
-Evaluate the candidate's answer.
+Evaluate the candidate answer.
 
 Question:
 ${question}
@@ -13,12 +14,16 @@ Answer:
 ${answer}
 
 Rules:
-- Score from 0 to 10
-- Check correctness, clarity, depth
-- Give short feedback
+- Score must be integer (0 to 10)
+- Feedback must be short (1-2 lines)
 
-IMPORTANT:
-Return ONLY valid JSON.
+STRICT INSTRUCTIONS:
+- DO NOT explain anything
+- DO NOT include markdown
+- DO NOT include code
+- DO NOT include text outside JSON
+
+Return ONLY this format:
 
 {
   "score": number,
@@ -31,11 +36,11 @@ export async function evaluateAnswer(question, answer) {
 
   const response = await callAI(prompt);
 
-  console.log("Evaluation RAW:", response);
+  const data = safeParseJSON(response);
 
-  try {
-    return JSON.parse(response);
-  } catch (err) {
+  if (!data) {
     throw new Error("Invalid JSON from Evaluation Agent");
   }
+
+  return data;
 }
