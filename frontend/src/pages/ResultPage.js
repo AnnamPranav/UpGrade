@@ -4,34 +4,44 @@ function ResultPage() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const score = location.state?.score;
-  const feedback = location.state?.feedback;
-  const question = location.state?.question;
-  const answer = location.state?.answer;
+  const finalScore = location.state?.finalScore;
+  const scores = location.state?.scores || [];
+  const feedbacks = location.state?.feedbacks || [];
 
   return (
     <div className="container">
-      <h2>Interview Result</h2>
+      <h2>Final Interview Result</h2>
 
       <p>
-        <strong>Question:</strong> {question || "No question available"}
+        <strong>Final Score:</strong>{" "}
+        {finalScore !== undefined ? finalScore.toFixed(2) : "N/A"}
       </p>
 
-      <p>
-        <strong>Your Answer:</strong> {answer || "No answer submitted"}
-      </p>
+      <h3>Question-wise Scores</h3>
+      {scores.length > 0 ? (
+        scores.map((score, index) => (
+          <p key={index}>
+            <strong>Question {index + 1}:</strong> {score}/10
+          </p>
+        ))
+      ) : (
+        <p>No scores available</p>
+      )}
 
-      <p>
-        <strong>Score:</strong> {score ?? "N/A"}
-      </p>
-
-      <p>
-        <strong>Feedback:</strong> {feedback || "No feedback available"}
-      </p>
+      <h3>Feedbacks</h3>
+      {feedbacks.length > 0 ? (
+        feedbacks.map((feedback, index) => (
+          <p key={index}>
+            <strong>Question {index + 1}:</strong> {feedback}
+          </p>
+        ))
+      ) : (
+        <p>No feedback available</p>
+      )}
 
       <br />
 
-      <button onClick={() => navigate("/")}>Go Back Home</button>
+      <button onClick={() => navigate("/")}>Start Again</button>
     </div>
   );
 }
