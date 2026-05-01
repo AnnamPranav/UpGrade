@@ -1,33 +1,25 @@
-import { generateQuestion } from "./questionAgent.js";
-import { evaluateAnswer } from "./evaluationAgent.js";
+import { InterviewManager } from "./agentManager.js";
 
-async function runTests() {
-  console.log("🚀 Day 6 Testing...\n");
+async function runInterview() {
+  console.log("🚀 Day 7 Interview Test\n");
 
-  const q = await generateQuestion("Frontend", "medium");
-  console.log("Question:", q, "\n");
+  const interview = new InterviewManager("Frontend", "medium", 3);
 
-  // ❌ Empty answer
-  const empty = await evaluateAnswer(q.question, "");
-  console.log("Empty Answer:", empty);
+  // Start
+  let res = await interview.startInterview();
+  console.log(`Q${res.questionNumber}:`, res.question);
 
-  // ❌ Short answer
-  const short = await evaluateAnswer(q.question, "I don't know");
-  console.log("Short Answer:", short);
+  // Answer 1
+  res = await interview.submitAnswer("Some frontend answer");
+  console.log("\nResult 1:", res);
 
-  // ⚠️ Medium answer
-  const medium = await evaluateAnswer(
-    q.question,
-    "It is used in frontend development"
-  );
-  console.log("Medium Answer:", medium);
+  // Answer 2
+  res = await interview.submitAnswer("Another answer");
+  console.log("\nResult 2:", res);
 
-  // ✅ Long answer
-  const long = await evaluateAnswer(
-    q.question,
-    "It is a JavaScript concept used to manage UI state, allowing dynamic updates and efficient rendering in frontend applications."
-  );
-  console.log("Long Answer:", long);
+  // Answer 3
+  res = await interview.submitAnswer("Final answer");
+  console.log("\nFinal Result:", res);
 }
 
-runTests();
+runInterview();

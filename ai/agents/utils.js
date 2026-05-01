@@ -18,10 +18,11 @@ export function safeParseJSON(text) {
 export function safeDefaultEvaluation() {
   return {
     score: 5,
-    feedback: "Average response"
+    feedback: "Average response",
+    strength: "Basic understanding",
+    weakness: "Needs improvement"
   };
 }
-
 export function fallbackResponse(type) {
   if (type === "question") {
     return { question: "Unable to generate question. Please try again." };

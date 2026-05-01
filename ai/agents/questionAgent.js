@@ -1,33 +1,32 @@
 import { callAI } from "./aiService.js";
 import { safeParseJSON, fallbackResponse } from "./utils.js";
 
-const QUESTION_PROMPT = (role, difficulty) => `
+const QUESTION_PROMPT = (role, difficulty, previousQuestions) => `
 You are an API that generates interview questions.
 
 Generate a ${difficulty} level interview question.
 
 Role: ${role}
 
-Difficulty Rules:
-- easy → basic concepts
-- medium → moderate reasoning
-- hard → advanced concepts
+Previous Questions:
+${previousQuestions.length ? previousQuestions.join("\n") : "None"}
+
+IMPORTANT:
+- Do NOT repeat or rephrase previous questions
+- Generate a completely new concept
 
 Rules:
 - Only ONE question
 - No explanation
-- No markdown
 
-STRICT:
-Return ONLY valid JSON.
-
+Return ONLY JSON:
 {
   "question": "..."
 }
 `;
 
-export async function generateQuestion(role, difficulty) {
-  const prompt = QUESTION_PROMPT(role, difficulty);
+export async function generateQuestion(role, difficulty, previousQuestions = []) {
+  const prompt = QUESTION_PROMPT(role, difficulty, previousQuestions);
 
   // 🔹 First attempt
   let response = await callAI(prompt);

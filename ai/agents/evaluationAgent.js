@@ -1,5 +1,5 @@
 import { callAI } from "./aiService.js";
-import { safeParseJSON, fallbackResponse, safeDefaultEvaluation } from "./utils.js";
+import { safeParseJSON, safeDefaultEvaluation } from "./utils.js";
 
 const EVALUATION_PROMPT = (question, answer) => `
 You are an API that evaluates interview answers.
@@ -26,7 +26,6 @@ Evaluation Rules:
 - Do NOT reward irrelevant but well-written answers
 
 IMPORTANT:
-- Do NOT consider whether the answer is AI-generated or human-generated
 - Judge only based on content quality
 - Be consistent in scoring
 
@@ -35,7 +34,9 @@ Return ONLY valid JSON.
 
 {
   "score": number,
-  "feedback": "..."
+  "feedback": "...",
+  "strength": "...",
+  "weakness": "..."
 }
 `;
 
@@ -44,28 +45,43 @@ export async function evaluateAnswer(question, answer) {
   if (!answer || answer.trim().length === 0) {
     return {
       score: 0,
-      feedback: "No answer provided"
+      feedback: "No answer provided",
+      strength: "No attempt",
+      weakness: "Answer missing"
     };
   }
 
   const prompt = EVALUATION_PROMPT(question, answer);
 
   try {
-    // First attempt
+    // 🔹 First attempt
     let response = await callAI(prompt);
     let data = safeParseJSON(response);
 
-    // Retry once if invalid
-    if (!data || typeof data.score !== "number") {
+    // 🔁 Retry once if invalid
+    if (
+      !data ||
+      typeof data.score !== "number" ||
+      typeof data.feedback !== "string" ||
+      typeof data.strength !== "string" ||
+      typeof data.weakness !== "string"
+    ) {
       response = await callAI(prompt);
       data = safeParseJSON(response);
     }
 
-    // Final validation
-    if (!data || typeof data.score !== "number") {
-      return safeDefaultEvaluation(); // 🔥 REQUIRED BY DAY 6
+    // 🔥 Final validation
+    if (
+      !data ||
+      typeof data.score !== "number" ||
+      typeof data.feedback !== "string" ||
+      typeof data.strength !== "string" ||
+      typeof data.weakness !== "string"
+    ) {
+      return safeDefaultEvaluation();
     }
 
+    // 🔒 Clamp score
     if (data.score < 0) data.score = 0;
     if (data.score > 10) data.score = 10;
 
