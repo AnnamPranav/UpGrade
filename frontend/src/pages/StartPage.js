@@ -10,14 +10,14 @@ function StartPage() {
     try {
       setLoading(true);
 
-      // Small delay to show loading text clearly
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-
       const response = await API.post("/interview/start");
 
       navigate("/interview", {
         state: {
+          sessionId: response.data.sessionId,
           question: response.data.question,
+          questionNumber: response.data.questionNumber || 1,
+          difficulty: response.data.difficulty || "medium",
         },
       });
     } catch (error) {
@@ -31,7 +31,7 @@ function StartPage() {
   return (
     <div className="container">
       <h1>AI Powered Mock Interview</h1>
-      <p>Practice your interview with AI-powered feedback.</p>
+      <p>Practice 5 interview questions with AI feedback.</p>
 
       {loading && <p className="loading-text">Generating question...</p>}
 
