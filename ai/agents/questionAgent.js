@@ -1,23 +1,18 @@
 import { callAI } from "./aiService.js";
-import { safeParseJSON, fallbackResponse } from "./utils.js";
+import { callWithRetry } from "./utils.js";
 
 const QUESTION_PROMPT = (role, difficulty, previousQuestions) => `
-You are an API that generates interview questions.
-
-Generate a ${difficulty} level interview question.
+Generate one ${difficulty} interview question.
 
 Role: ${role}
 
-Previous Questions:
+Avoid repeating:
 ${previousQuestions.length ? previousQuestions.join("\n") : "None"}
-
-IMPORTANT:
-- Do NOT repeat or rephrase previous questions
-- Generate a completely new concept
 
 Rules:
 - Only ONE question
-- No explanation
+- Do NOT repeat or rephrase previous questions
+- Keep it clear and concise
 
 Return ONLY JSON:
 {
@@ -28,20 +23,45 @@ Return ONLY JSON:
 export async function generateQuestion(role, difficulty, previousQuestions = []) {
   const prompt = QUESTION_PROMPT(role, difficulty, previousQuestions);
 
-  // 🔹 First attempt
-  let response = await callAI(prompt);
-  let data = safeParseJSON(response);
+  try {
+    // 🔥 Centralized retry + validation
+    const data = await callWithRetry(
+      prompt,
+      "question",
+      callAI
+    );
 
-  // 🔥 Retry if invalid
-  if (!data || typeof data.question !== "string") {
-    response = await callAI(prompt);
-    data = safeParseJSON(response);
+    // 🔒 Final validation (extra safety)
+    if (!isValidQuestion(data)) {
+      return smartFallbackQuestion();
+    }
+
+    // 📊 Logging (useful in production)
+    console.log("[QUESTION]", {
+      difficulty,
+      length: data.question.length
+    });
+
+    return data;
+
+  } catch (err) {
+    console.error("Question Agent Error:", err.message);
+    return smartFallbackQuestion();
   }
+}
 
-  // 🔥 Final fallback
-  if (!data || typeof data.question !== "string") {
-    return fallbackResponse("question");
-  }
+// 🔒 Strong validation
+function isValidQuestion(data) {
+  return (
+    data &&
+    typeof data.question === "string" &&
+    data.question.trim().length > 10
+  );
+}
 
-  return data;
+// 🔥 Smart fallback (better than generic)
+function smartFallbackQuestion() {
+  return {
+    question: "Explain a key concept in your domain and how you would apply it in a real-world scenario."
+  };
 }

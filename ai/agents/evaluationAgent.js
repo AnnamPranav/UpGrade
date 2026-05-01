@@ -1,8 +1,10 @@
 import { callAI } from "./aiService.js";
-import { safeParseJSON, safeDefaultEvaluation } from "./utils.js";
+import { callWithRetry, smartFallbackEvaluation } from "./utils.js";
+
+const MAX_LENGTH = 2000;
 
 const EVALUATION_PROMPT = (question, answer) => `
-You are an API that evaluates interview answers.
+Evaluate this answer.
 
 Question:
 ${question}
@@ -10,28 +12,19 @@ ${question}
 Answer:
 ${answer}
 
-Scoring (STRICT 0–10):
+Score (0–10):
+0–2 incorrect or irrelevant
+3–5 partially correct
+6–7 mostly correct
+8–9 strong answer
+10 perfect answer
 
-- 0–2 → completely incorrect or irrelevant
-- 3–5 → partially correct but missing key concepts
-- 6–7 → mostly correct but lacks depth or specificity
-- 8–9 → correct with clear explanation and relevant details
-- 10 → fully correct, precise, and well-structured
-
-Evaluation Rules:
-- Focus only on correctness, clarity, and depth
-- Penalize vague or generic answers
-- Penalize answers that do not directly address the question
-- Do NOT assume intent
-- Do NOT reward irrelevant but well-written answers
-
-IMPORTANT:
-- Judge only based on content quality
+Rules:
+- Judge correctness, clarity, and depth
+- Penalize vague or off-topic answers
 - Be consistent in scoring
 
-STRICT:
-Return ONLY valid JSON.
-
+Return ONLY JSON:
 {
   "score": number,
   "feedback": "...",
@@ -41,54 +34,75 @@ Return ONLY valid JSON.
 `;
 
 export async function evaluateAnswer(question, answer) {
-  // 🔒 Handle empty answers immediately
-  if (!answer || answer.trim().length === 0) {
-    return {
+  // 🔒 Empty answer
+  if (!answer || answer.trim() === "") {
+    return formatEvaluation({
       score: 0,
       feedback: "No answer provided",
       strength: "No attempt",
       weakness: "Answer missing"
-    };
+    });
+  }
+
+  // 🔒 Limit answer size
+  if (answer.length > MAX_LENGTH) {
+    answer = answer.slice(0, MAX_LENGTH);
+  }
+
+  // 🔒 Garbage input
+  if (answer.length < 5 || /^[^a-zA-Z0-9]+$/.test(answer)) {
+    return formatEvaluation({
+      score: 1,
+      feedback: "Answer is unclear or not meaningful",
+      strength: "Attempt made",
+      weakness: "Invalid or nonsensical input"
+    });
   }
 
   const prompt = EVALUATION_PROMPT(question, answer);
 
   try {
-    // 🔹 First attempt
-    let response = await callAI(prompt);
-    let data = safeParseJSON(response);
+    const data = await callWithRetry(
+      prompt,
+      "evaluation",
+      callAI,
+      { answer }
+    );
 
-    // 🔁 Retry once if invalid
-    if (
-      !data ||
-      typeof data.score !== "number" ||
-      typeof data.feedback !== "string" ||
-      typeof data.strength !== "string" ||
-      typeof data.weakness !== "string"
-    ) {
-      response = await callAI(prompt);
-      data = safeParseJSON(response);
+    if (!isValidEvaluation(data)) {
+      return formatEvaluation(smartFallbackEvaluation(answer));
     }
 
-    // 🔥 Final validation
-    if (
-      !data ||
-      typeof data.score !== "number" ||
-      typeof data.feedback !== "string" ||
-      typeof data.strength !== "string" ||
-      typeof data.weakness !== "string"
-    ) {
-      return safeDefaultEvaluation();
-    }
+    data.score = Math.max(0, Math.min(10, data.score));
 
-    // 🔒 Clamp score
-    if (data.score < 0) data.score = 0;
-    if (data.score > 10) data.score = 10;
+    console.log("[EVAL]", {
+      score: data.score,
+      answerLength: answer.length
+    });
 
-    return data;
+    return formatEvaluation(data);
 
   } catch (err) {
     console.error("Evaluation Error:", err.message);
-    return safeDefaultEvaluation();
+    return formatEvaluation(smartFallbackEvaluation(answer));
   }
+}
+
+// ✅ Standard formatter
+function formatEvaluation(data) {
+  return {
+    type: "evaluation",
+    data
+  };
+}
+
+// 🔒 Validation
+function isValidEvaluation(data) {
+  return (
+    data &&
+    typeof data.score === "number" &&
+    typeof data.feedback === "string" &&
+    typeof data.strength === "string" &&
+    typeof data.weakness === "string"
+  );
 }
