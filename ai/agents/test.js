@@ -2,28 +2,32 @@ import { generateQuestion } from "./questionAgent.js";
 import { evaluateAnswer } from "./evaluationAgent.js";
 
 async function runTests() {
-  console.log("🚀 Final Test...\n");
+  console.log("🚀 Day 6 Testing...\n");
 
   const q = await generateQuestion("Frontend", "medium");
   console.log("Question:", q, "\n");
 
-  // ❌ Bad answer
-  const bad = await evaluateAnswer(q.question, "I don't know");
-  console.log("Bad Answer:", bad);
+  // ❌ Empty answer
+  const empty = await evaluateAnswer(q.question, "");
+  console.log("Empty Answer:", empty);
 
-  // ⚠️ Average answer
-  const avg = await evaluateAnswer(
-    q.question,
-    "It is used in frontend applications"
-  );
-  console.log("Average Answer:", avg);
+  // ❌ Short answer
+  const short = await evaluateAnswer(q.question, "I don't know");
+  console.log("Short Answer:", short);
 
-  // ✅ Strong answer (proper one)
-  const good = await evaluateAnswer(
+  // ⚠️ Medium answer
+  const medium = await evaluateAnswer(
     q.question,
-    "This can be implemented by filtering a predefined list based on user input using string matching. We can use debouncing to optimize performance and display top suggestions dynamically as the user types."
+    "It is used in frontend development"
   );
-  console.log("Strong Answer:", good);
+  console.log("Medium Answer:", medium);
+
+  // ✅ Long answer
+  const long = await evaluateAnswer(
+    q.question,
+    "It is a JavaScript concept used to manage UI state, allowing dynamic updates and efficient rendering in frontend applications."
+  );
+  console.log("Long Answer:", long);
 }
 
 runTests();

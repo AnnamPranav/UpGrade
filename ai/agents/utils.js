@@ -14,17 +14,19 @@ export function safeParseJSON(text) {
   }
 }
 
+// 🔒 Safe defaults (Day 6 requirement)
+export function safeDefaultEvaluation() {
+  return {
+    score: 5,
+    feedback: "Average response"
+  };
+}
+
 export function fallbackResponse(type) {
   if (type === "question") {
-    return {
-      question: "Unable to generate question. Please try again."
-    };
+    return { question: "Unable to generate question. Please try again." };
   }
-
   if (type === "evaluation") {
-    return {
-      score: 0,
-      feedback: "Evaluation failed. Please try again."
-    };
+    return safeDefaultEvaluation();
   }
 }
