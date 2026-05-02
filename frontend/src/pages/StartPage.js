@@ -1,43 +1,56 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import API from "../services/api";
+import { startInterview } from "../services/api";
 
 function StartPage() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
   const handleStart = async () => {
-    try {
-      setLoading(true);
+    setLoading(true);
 
-      const response = await API.post("/interview/start");
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+
+      const res = await startInterview();
+      const data = res.data;
+
+      localStorage.setItem("sessionId", data.sessionId);
 
       navigate("/interview", {
         state: {
-          sessionId: response.data.sessionId,
-          question: response.data.question,
-          questionNumber: response.data.questionNumber || 1,
-          difficulty: response.data.difficulty || "medium",
+          question: data.question,
+          questionNumber: data.questionNumber || 1,
+          difficulty: data.difficulty || "medium",
         },
       });
-    } catch (error) {
-      console.error("Error starting interview:", error);
-      alert("Failed to generate question. Please check backend.");
+    } catch (err) {
+      alert("Failed to start interview. Please check backend.");
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div className="container">
-      <h1>AI Powered Mock Interview</h1>
-      <p>Practice 5 interview questions with AI feedback.</p>
+    <div className="page">
+      <div className="hero-card">
+        <h1>AI Interview Platform</h1>
+        <p className="subtitle">
+          Practice a 5-question mock interview and receive instant AI feedback.
+        </p>
 
-      {loading && <p className="loading-text">Generating question...</p>}
+        <div className="features">
+          <span>AI Questions</span>
+          <span>Adaptive Difficulty</span>
+          <span>Final Feedback</span>
+        </div>
 
-      <button onClick={handleStart} disabled={loading}>
-        {loading ? "Generating question..." : "Start Interview"}
-      </button>
+        {loading && <div className="loader-box">Generating question...</div>}
+
+        <button className="primary-btn" onClick={handleStart} disabled={loading}>
+          {loading ? "Generating..." : "Start Interview"}
+        </button>
+      </div>
     </div>
   );
 }
