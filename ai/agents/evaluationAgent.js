@@ -49,6 +49,18 @@ export async function evaluateAnswer(question, answer) {
     answer = answer.slice(0, MAX_LENGTH);
   }
 
+  if (answer.trim().length < 20) {
+  return {
+    type: "evaluation",
+    data: {
+      score: 2,
+      feedback: "Answer is too short. Provide at least 1–2 meaningful sentences.",
+      strength: "Attempt made",
+      weakness: "Insufficient detail"
+    }
+  };
+}
+
   // 🔒 Garbage input
   if (answer.length < 5 || /^[^a-zA-Z0-9]+$/.test(answer)) {
     return formatEvaluation({
