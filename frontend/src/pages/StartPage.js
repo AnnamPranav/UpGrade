@@ -10,6 +10,8 @@ function StartPage() {
     setLoading(true);
 
     try {
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+
       const res = await startInterview();
       const data = res.data;
 
@@ -46,7 +48,7 @@ function StartPage() {
         {loading && <div className="loader-box">Generating question...</div>}
 
         <button className="primary-btn" onClick={handleStart} disabled={loading}>
-          {loading ? "Starting..." : "Start Interview"}
+          {loading ? "Generating..." : "Start Interview"}
         </button>
       </div>
     </div>

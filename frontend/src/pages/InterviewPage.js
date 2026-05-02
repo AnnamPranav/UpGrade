@@ -44,6 +44,8 @@ function InterviewPage() {
     setLoading(true);
 
     try {
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+
       const res = await submitAnswer(sessionId, answer);
       const data = res.data;
 
