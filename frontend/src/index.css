@@ -1,93 +1,211 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background: #f5f5f5;
-  min-height: 100vh;
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #eef4ff, #f8fafc);
+  color: #1f2937;
 }
 
-.container {
-  max-width: 600px;
-  margin: 60px auto;
-  padding: 40px;
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 15px;
+}
+
+.container,
+.hero-card {
+  width: 100%;
+  max-width: 720px;
   background: white;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  padding: 38px;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-h1, h2 {
-  margin-bottom: 16px;
-  color: #333;
+.hero-card h1,
+.container h1,
+.container h2 {
+  margin-top: 0;
+  color: #111827;
 }
 
-p {
-  color: #666;
-  margin-bottom: 24px;
+.subtitle {
+  font-size: 18px;
+  color: #4b5563;
+  margin-bottom: 25px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.features span {
+  background: #eef4ff;
+  color: #2563eb;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.primary-btn {
+  padding: 13px 28px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.primary-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.progress-text {
+  color: #2563eb;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 12px 0 22px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #2563eb;
+  transition: width 0.4s ease;
+}
+
+.difficulty-badge {
+  display: inline-block;
+  background: #f3f4f6;
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: #374151;
 }
 
 .question-box {
-  background: #f0f4ff;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  background: #eef4ff;
+  padding: 18px;
+  border-left: 5px solid #2563eb;
+  border-radius: 12px;
+  margin: 22px 0;
   text-align: left;
-}
-
-.question-box p {
-  color: #333;
-  font-size: 1.1rem;
-  margin: 0;
+  font-size: 18px;
 }
 
 textarea {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 1rem;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  font-size: 16px;
   resize: vertical;
+  min-height: 150px;
   margin-bottom: 20px;
+  outline: none;
 }
 
 textarea:focus {
-  outline: none;
-  border-color: #4a6cf7;
+  border-color: #2563eb;
 }
 
-button {
-  background: #4a6cf7;
-  color: white;
-  border: none;
-  padding: 12px 32px;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-button:hover {
-  background: #3a5bd9;
-}
-
-button:disabled {
-  background: #ccc;
+textarea:disabled {
+  background: #f1f5f9;
   cursor: not-allowed;
 }
 
-.result-item {
-  text-align: left;
-  padding: 16px;
-  background: #fafafa;
-  border-radius: 8px;
-  margin-bottom: 12px;
+.loader-box {
+  background: #eef4ff;
+  color: #2563eb;
+  padding: 12px;
+  border-radius: 12px;
+  margin: 15px 0;
+  font-weight: 700;
 }
 
-.result-item h4 {
-  color: #4a6cf7;
-  margin-bottom: 8px;
+.score-card {
+  background: #eef4ff;
+  padding: 22px;
+  border-radius: 16px;
+  margin: 20px 0;
+}
+
+.score-card h2 {
+  margin: 0;
+  color: #2563eb;
+  font-size: 38px;
+}
+
+.level {
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0;
+}
+
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  background: #f9fafb;
+  padding: 14px;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+
+.feedback-card {
+  background: #f9fafb;
+  padding: 14px;
+  border-radius: 12px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.feedback-card p {
+  margin-bottom: 0;
+  color: #4b5563;
+}
+
+.button-row {
+  margin-top: 25px;
+}
+
+@media (max-width: 600px) {
+  .container,
+  .hero-card {
+    padding: 25px;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .score-card h2 {
+    font-size: 30px;
+  }
 }

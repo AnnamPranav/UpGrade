@@ -1,50 +1,87 @@
 const express = require("express");
 const router = express.Router();
-const Interview = require("../model/interview");
+
+// Static questions for testing
+const questions = [
+  "Tell me about yourself",
+  "What are your strengths?",
+  "What are your weaknesses?",
+  "Why should we hire you?",
+  "Where do you see yourself in 5 years?"
+];
+
+// Temporary session storage
+let sessions = {};
 
 // START INTERVIEW
-router.get("/start", async (req, res) => {
+router.post("/start", (req, res) => {
+  const sessionId = Date.now().toString();
 
-  const question = "Tell me about yourself";
-
-  const newInterview = new Interview({
-    sessionId: Date.now().toString(),
-    questions: [question],
-    answers: [],
-    scores: []
-  });
-
-  await newInterview.save();
+  sessions[sessionId] = {
+    questionIndex: 0,
+    scores: [],
+    feedbacks: []
+  };
 
   res.json({
-    sessionId: newInterview.sessionId,
-    question: question
+    completed: false,
+    sessionId: sessionId,
+    questionNumber: 1,
+    difficulty: "medium",
+    question: questions[0]
   });
 });
 
-
-// ANSWER API
-router.post("/answer", async (req, res) => {
-
+// SUBMIT ANSWER
+router.post("/answer", (req, res) => {
   const { sessionId, answer } = req.body;
 
-  const interview = await Interview.findOne({ sessionId });
-
-  if (!interview) {
-    return res.json({ message: "Session not found" });
+  if (!sessionId || !answer || answer.trim() === "") {
+    return res.status(400).json({
+      completed: false,
+      message: "sessionId and answer are required"
+    });
   }
 
-  const score = 7;
-  const feedback = "Good answer, improve clarity";
+  const session = sessions[sessionId];
 
-  interview.answers.push(answer);
-  interview.scores.push(score);
+  if (!session) {
+    return res.status(404).json({
+      completed: false,
+      message: "Session not found"
+    });
+  }
 
-  await interview.save();
+  // Dummy evaluation
+  const score = 8;
+  const feedback = "Good answer";
 
-  res.json({
-    score,
-    feedback
+  session.scores.push(score);
+  session.feedbacks.push(feedback);
+
+  // Move to next question
+  session.questionIndex++;
+
+  if (session.questionIndex < questions.length) {
+    return res.json({
+      completed: false,
+      score,
+      feedback,
+      nextDifficulty: "medium",
+      nextQuestionNumber: session.questionIndex + 1,
+      nextQuestion: questions[session.questionIndex]
+    });
+  }
+
+  const finalScore =
+    session.scores.reduce((sum, score) => sum + score, 0) /
+    session.scores.length;
+
+  return res.json({
+    completed: true,
+    finalScore,
+    scores: session.scores,
+    feedbacks: session.feedbacks
   });
 });
 

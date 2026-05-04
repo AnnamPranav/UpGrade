@@ -1,0 +1,997 @@
+16:07:37,False,False,unknown,False
+16:07:38,False,False,unknown,False
+16:07:38,False,False,unknown,False
+16:07:39,False,False,unknown,False
+16:07:39,False,False,unknown,False
+16:07:40,False,False,unknown,False
+16:07:40,False,False,unknown,False
+16:07:41,False,False,unknown,False
+16:07:41,False,False,unknown,False
+16:07:42,False,False,unknown,False
+16:07:42,False,False,unknown,False
+16:07:43,False,False,unknown,False
+16:07:43,False,False,unknown,False
+16:07:44,False,False,unknown,False
+16:07:44,False,False,unknown,False
+16:07:45,False,False,unknown,False
+16:07:45,False,False,unknown,False
+16:07:46,False,False,unknown,False
+16:07:46,False,False,unknown,False
+16:07:47,False,False,unknown,False
+16:07:47,False,False,unknown,False
+16:07:48,False,False,unknown,False
+16:07:48,False,False,unknown,False
+16:07:49,False,False,unknown,False
+16:07:49,False,False,unknown,False
+16:07:50,False,False,unknown,False
+16:07:50,False,False,unknown,False
+16:07:51,True,True,unknown,False
+16:07:52,True,True,unknown,False
+16:07:52,True,True,looking_center,False
+16:07:53,True,True,looking_center,False
+16:07:54,True,True,looking_center,False
+16:07:54,True,True,unknown,False
+16:07:55,True,True,looking_center,False
+16:07:56,True,True,looking_center,False
+16:07:57,True,True,looking_center,False
+16:07:57,True,True,looking_center,False
+16:07:58,True,True,looking_center,False
+16:07:59,True,True,looking_center,False
+16:07:59,True,True,looking_center,False
+16:08:00,True,True,looking_center,False
+16:08:01,True,True,looking_center,False
+16:08:01,True,True,looking_center,False
+16:08:02,True,True,looking_center,False
+16:08:03,True,True,looking_center,False
+16:08:03,True,True,looking_center,False
+16:08:04,True,True,looking_center,False
+16:08:05,True,True,looking_center,False
+16:08:05,True,True,looking_center,False
+16:08:06,True,True,looking_center,False
+16:08:07,True,True,looking_center,False
+16:08:08,True,True,looking_center,False
+16:08:08,True,True,looking_center,False
+16:08:09,True,True,looking_center,False
+16:08:09,True,True,looking_center,False
+16:08:10,True,True,looking_center,False
+16:08:11,True,True,looking_left,True
+16:08:11,True,True,looking_left,True
+16:08:12,True,True,looking_left,True
+16:08:13,True,True,looking_left,True
+16:08:14,True,True,looking_left,True
+16:08:15,True,True,looking_center,False
+16:08:15,True,True,looking_center,False
+16:08:16,True,True,looking_center,False
+16:08:17,True,True,looking_center,False
+16:08:18,True,True,looking_center,False
+16:08:19,True,True,looking_center,False
+16:08:19,True,True,looking_center,False
+16:08:20,True,True,looking_center,False
+16:08:21,True,True,looking_center,False
+16:08:22,True,True,looking_center,False
+16:08:23,True,True,looking_center,False
+16:08:24,True,True,looking_center,False
+16:08:25,True,False,unknown,False
+16:08:25,True,True,looking_center,False
+16:08:26,True,True,looking_center,False
+16:08:26,True,False,unknown,False
+16:08:27,False,False,unknown,False
+16:08:27,False,False,unknown,False
+16:08:28,False,False,unknown,False
+16:08:28,False,False,unknown,False
+16:08:29,False,False,unknown,False
+16:08:29,False,False,unknown,False
+16:13:01,False,False,unknown,False
+16:13:02,False,False,unknown,False
+16:13:02,False,False,unknown,False
+16:13:03,False,False,unknown,False
+16:13:03,False,False,unknown,False
+16:13:04,False,False,unknown,False
+16:13:04,False,False,unknown,False
+16:13:05,False,False,unknown,False
+16:13:05,False,False,unknown,False
+16:13:06,False,False,unknown,False
+16:13:06,False,False,unknown,False
+16:13:07,False,False,unknown,False
+16:13:07,False,False,unknown,False
+16:13:08,True,True,looking_left,True
+16:13:08,True,True,looking_center,False
+16:13:09,True,True,looking_center,False
+16:13:10,True,False,unknown,False
+16:13:11,True,True,looking_center,False
+16:13:11,True,False,unknown,False
+16:13:12,True,True,looking_center,False
+16:13:13,True,True,looking_center,False
+16:13:13,True,True,looking_center,False
+16:13:14,True,True,looking_center,False
+16:13:14,True,True,looking_center,False
+16:13:15,True,False,unknown,False
+16:13:16,True,True,looking_center,False
+16:13:17,True,True,looking_center,False
+16:13:17,True,True,looking_center,False
+16:13:18,True,True,looking_center,False
+16:13:19,True,True,looking_center,False
+16:13:19,True,True,looking_center,False
+16:13:20,False,False,unknown,False
+16:13:20,False,False,unknown,False
+16:13:21,False,False,unknown,False
+16:13:21,False,False,unknown,False
+16:13:22,False,False,unknown,False
+16:13:22,False,False,unknown,False
+16:13:23,False,False,unknown,False
+16:13:23,False,False,unknown,False
+16:13:24,False,False,unknown,False
+16:13:24,False,False,unknown,False
+16:13:25,True,True,unknown,False
+16:13:25,True,False,unknown,False
+16:13:26,True,False,unknown,False
+16:13:26,True,False,unknown,False
+16:13:27,True,False,unknown,False
+16:13:27,True,False,unknown,False
+16:13:28,True,True,looking_center,False
+16:13:29,True,True,looking_center,False
+16:13:30,True,True,looking_center,False
+16:13:30,True,True,looking_center,False
+16:13:31,True,True,looking_center,False
+16:13:31,True,True,looking_center,False
+16:13:32,True,True,looking_center,False
+16:13:33,True,True,looking_center,False
+16:13:33,True,True,looking_center,False
+16:13:34,True,True,looking_center,False
+16:13:35,True,True,looking_center,False
+16:13:35,True,True,looking_center,False
+16:13:36,True,False,unknown,False
+16:13:36,True,False,unknown,False
+16:13:37,True,False,unknown,False
+16:13:37,False,False,unknown,False
+16:13:38,False,False,unknown,False
+16:13:38,False,False,unknown,False
+16:13:39,False,False,unknown,False
+16:13:39,False,False,unknown,False
+16:13:40,False,False,unknown,False
+16:13:40,False,False,unknown,False
+16:13:41,False,False,unknown,False
+16:13:41,False,False,unknown,False
+16:13:42,False,False,unknown,False
+16:13:42,True,True,looking_center,False
+16:13:43,True,True,looking_center,False
+16:13:43,True,True,looking_center,False
+16:13:44,True,True,looking_center,False
+16:13:45,True,True,looking_center,False
+16:13:45,True,True,looking_center,False
+16:13:46,True,True,looking_center,False
+16:13:47,True,True,looking_center,False
+16:13:47,True,True,looking_center,False
+16:13:48,True,True,looking_center,False
+16:13:48,True,True,looking_center,False
+16:13:49,True,True,looking_center,False
+16:13:49,False,False,unknown,False
+16:13:50,False,False,unknown,False
+16:13:50,False,False,unknown,False
+16:13:51,True,True,looking_center,False
+16:13:51,True,True,looking_center,False
+16:13:52,True,True,looking_center,False
+16:13:53,False,False,unknown,False
+16:13:53,False,False,unknown,False
+16:14:04.861 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:05.184 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:05.504 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:05.834 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:06.178 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:14:06.554 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:14:06.985 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:14:07.323 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:07.647 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:07.989 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:08.329 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:08.659 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:09.075 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:14:09.438 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:14:09.936 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:10.336 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:10.720 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:11.058 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:11.538 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:12.047 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:12.526 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:13.005 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:13.497 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:13.984 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:14.482 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:14.984 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:15.478 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:15.973 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:16.475 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:16.747 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:17.242 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:17.748 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:18.233 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:18.684 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:18.965 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:19.419 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:19.839 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:20.335 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:20.812 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:21.282 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:21.676 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:14:22.194 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:22.654 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:23.146 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:23.700 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:24.161 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:24.643 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:25.146 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:25.640 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:26.136 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:26.641 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:27.161 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:27.633 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:28.123 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:28.605 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:28.967 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:29.415 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:29.885 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:30.351 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:30.696 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:31.200 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:31.640 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:14:32.125 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:32.615 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:14:32.989 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:14:33.442 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:33.877 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:34.322 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:14:34.814 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:35.203 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:35.594 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:36.085 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:36.454 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:14:36.889 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:37.241 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:37.562 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:14:37.900 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:14:38.263 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:38.643 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:14:39.052 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:39.432 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:39.912 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:40.366 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:40.666 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:40.975 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:14:41.323 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:41.651 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:41.985 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:42.310 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:42.644 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:43.084 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:43.559 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:44.063 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:44.546 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:45.015 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:45.490 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:14:46.005 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:14:46.489 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:46.854 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:47.334 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:47.653 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:47.967 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:48.358 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:48.719 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:49.044 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:49.377 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:49.715 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:50.047 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:14:50.438 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:50.885 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:51.367 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:51.821 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:52.289 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:52.738 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:53.194 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:53.591 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:54.083 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:54.715 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:55.308 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:55.908 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:56.499 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:14:57.090 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:14:57.616 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:14:58.148 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:14:58.596 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:14:59.069 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:14:59.524 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:00.028 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:00.502 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:00.984 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:01.347 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:02.008 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:02.657 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:03.274 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:03.832 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:04.319 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:04.789 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:05.253 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:05.762 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:06.253 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:06.767 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:07.197 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:07.663 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:08.121 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:08.578 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:08.953 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:09.445 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:09.979 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:10.453 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:10.914 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:11.395 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:11.932 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:12.468 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:12.915 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:13.352 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:13.856 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:14.346 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:14.837 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:15.332 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:15.784 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:16.276 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:16.833 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:17.351 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:17.844 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:18.335 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:18.835 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:19.312 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:19.628 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:19.967 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:20.302 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:20.647 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:20.955 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:21.346 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:21.881 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:22.460 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:23.076 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:23.680 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:24.250 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:24.862 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:25.456 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:26.066 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:26.682 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:27.319 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:27.930 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:28.547 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:29.188 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:30.000 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:30.711 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:31.477 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:32.135 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:32.796 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:33.492 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:34.241 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:34.966 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:35.678 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:36.429 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:37.139 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:37.813 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:38.522 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:39.184 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:39.929 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:40.708 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:41.415 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:42.307 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:42.979 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:43.638 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:44.402 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:45.149 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:45.894 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:46.639 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:47.384 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:48.149 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:48.897 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:49.690 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:50.484 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:50.947 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:15:51.285 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:15:51.646 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:15:52.032 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:15:52.518 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:53.147 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:53.862 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:54.557 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:55.075 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:15:55.472 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:15:56.058 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:56.737 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:57.331 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:15:57.974 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:15:58.527 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:15:59.103 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:15:59.555 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:15:59.921 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:16:00.557 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:01.153 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:16:01.794 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:02.460 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:03.129 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:16:03.751 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:16:04.410 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:05.046 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:05.689 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:16:06.392 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:07.059 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:07.727 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:16:08.349 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:09.013 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:16:09.648 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:10.316 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:10.892 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:16:11.525 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:16:12.130 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:16:12.834 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:16:13.455 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:14.166 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:16:14.912 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:15.560 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:16.194 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:16.860 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:17.510 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:18.216 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:18.834 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:19.443 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:19.975 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:20.505 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:21.007 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:21.537 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:22.099 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:16:22.443 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:28.825 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:29.158 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:29.501 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:29.841 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:30.177 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:30.471 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:30.833 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:31.176 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:31.517 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:31.836 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:32.169 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:32.479 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:32.815 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:33.153 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:33.483 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:33.888 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:34.215 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:34.564 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:34.894 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:35.206 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:35.562 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:35.892 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:36.226 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:36.561 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:36.898 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:37.236 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:37.581 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:37.891 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:38.230 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:38.560 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:38.897 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:39.226 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:28:39.573 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:39.922 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:40.257 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:40.618 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:40.913 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:41.288 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:41.576 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:41.912 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:42.246 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:42.576 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:42.932 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:43.233 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:43.575 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:43.909 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:44.240 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:44.587 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:44.922 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:45.253 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:45.606 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:45.962 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:46.274 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:28:46.607 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:28:46.952 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:47.276 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:47.613 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:47.938 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:48.288 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:48.598 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:48.930 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:49.268 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:28:49.608 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:49.921 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:50.257 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:50.611 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:50.926 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:51.266 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:51.600 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:51.938 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:52.279 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:52.629 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:52.960 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:53.302 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:53.613 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:53.941 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:54.274 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:54.616 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:54.958 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:55.285 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:55.616 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:55.955 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:56.287 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:56.625 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:56.980 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:57.273 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:57.591 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:57.923 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:58.257 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:58.588 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:58.932 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:28:59.256 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:59.594 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:28:59.941 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:00.277 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:00.612 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:00.929 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:01.272 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:01.604 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:01.932 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:02.280 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:02.615 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:02.952 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:03.287 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:03.618 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:03.955 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:04.293 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:04.639 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:04.959 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:05.288 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:05.611 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:05.929 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:06.264 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:06.594 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:06.939 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:07.264 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:07.608 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:07.946 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:08.260 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:08.591 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:08.931 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:09.266 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:09.604 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:09.928 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:10.281 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:10.652 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:11.177 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:11.743 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:12.268 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:12.814 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:13.261 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:13.767 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:14.249 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:14.593 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:14.903 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:15.217 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:15.553 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:15.889 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:16.223 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:16.561 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:16.897 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:17.234 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:17.569 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:17.904 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:18.245 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:18.576 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:19.081 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:19.579 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:20.103 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:20.626 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:21.133 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:21.604 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:21.985 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:22.419 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:22.849 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:23.190 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:23.510 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:23.857 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:24.195 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:24.534 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:24.865 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:25.209 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:25.542 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:25.858 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:26.199 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:26.531 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:26.977 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:27.550 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:28.053 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:28.468 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:28.943 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:29.441 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:29.952 | Face: True | Eyes: True | Gaze: looking_left | Away: True
+16:29:30.404 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:30.740 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:31.081 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:31.425 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:31.774 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:32.064 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:32.387 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:32.707 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:33.057 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:33.396 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:33.731 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:34.067 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:34.403 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:34.743 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:35.074 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:35.397 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:35.732 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:36.067 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:36.404 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:36.742 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:37.076 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:37.410 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:37.743 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:29:38.072 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:38.422 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:38.765 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:39.101 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:39.414 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:39.746 | Face: True | Eyes: True | Gaze: looking_left | Away: True
+16:29:40.051 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:40.418 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:40.741 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:41.093 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:41.397 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:41.733 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:42.063 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:29:42.402 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:42.724 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:43.057 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:43.400 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:43.726 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:44.074 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:44.405 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:44.739 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:45.073 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:45.410 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:45.745 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:46.084 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:46.402 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:46.807 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:47.127 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:47.474 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:47.777 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:48.138 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:48.486 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:48.807 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:49.152 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:49.479 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:49.776 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:50.114 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:50.449 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:50.806 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:51.184 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:51.511 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:51.805 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:52.149 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:52.490 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:52.803 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:53.134 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:53.458 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:53.798 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:54.131 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:54.467 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:54.790 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:55.122 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:55.461 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:55.793 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:56.129 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:56.472 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:56.806 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:57.139 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:57.473 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:57.796 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:58.138 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:58.461 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:58.803 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:29:59.151 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:59.481 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:29:59.819 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:00.139 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:00.475 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:00.810 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:01.148 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:01.477 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:01.815 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:02.149 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:02.488 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:02.804 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:03.138 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:03.475 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:03.811 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:04.170 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:04.490 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:04.826 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:05.160 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:30:05.481 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:30:05.811 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:06.136 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:06.460 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:06.812 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:07.162 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:07.506 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:07.826 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:08.144 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:30:08.435 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:08.756 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:09.125 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:30:09.446 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:09.789 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:10.098 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:10.447 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:10.769 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:11.122 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:11.453 | Face: True | Eyes: True | Gaze: looking_left | Away: True
+16:30:11.797 | Face: True | Eyes: True | Gaze: looking_left | Away: True
+16:30:12.157 | Face: True | Eyes: True | Gaze: looking_left | Away: True
+16:30:12.459 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:12.780 | Face: True | Eyes: True | Gaze: looking_left | Away: True
+16:30:13.134 | Face: True | Eyes: True | Gaze: looking_left | Away: True
+16:30:13.463 | Face: True | Eyes: True | Gaze: looking_left | Away: True
+16:30:13.797 | Face: True | Eyes: True | Gaze: looking_left | Away: True
+16:30:14.108 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:14.448 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:14.783 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:15.125 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:15.434 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:15.778 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:16.114 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:16.450 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:16.806 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:17.117 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:17.464 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:17.793 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:18.107 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:18.461 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:18.786 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:19.143 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:19.488 | Face: True | Eyes: True | Gaze: looking_left | Away: True
+16:30:19.813 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:20.143 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:20.477 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:20.800 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:21.141 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:21.476 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:21.822 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:22.138 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:22.457 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:22.795 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:23.148 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:23.470 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:23.767 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:24.103 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:24.438 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:24.781 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:30:25.154 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:25.488 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:25.795 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:26.122 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:26.451 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:26.791 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:27.122 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:27.459 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:27.794 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:28.129 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:28.467 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:28.787 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:29.125 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:29.454 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:29.799 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:30.131 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:30.468 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:30.802 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:31.142 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:31.457 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:31.793 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:32.130 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:32.472 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:32.807 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:33.140 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:33.476 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:33.814 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:34.123 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:34.466 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:34.787 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:30:35.126 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:30:35.475 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:35.810 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:36.157 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:36.484 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:36.802 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:37.144 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:30:37.486 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:37.825 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:38.116 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:38.482 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:38.826 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:39.164 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:39.477 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:30:39.816 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:40.139 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:40.477 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:40.809 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:41.163 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:30:41.492 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:30:41.808 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:30:42.147 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:30:42.449 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:30:42.821 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:30:43.115 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:30:43.457 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:30:43.791 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:30:44.119 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:30:44.456 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:30:44.770 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:15.575 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:34:15.909 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:34:16.247 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:34:16.583 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:34:16.918 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:34:17.259 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:17.660 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:34:17.980 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:18.303 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:34:18.643 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:34:18.936 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:34:19.284 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:34:19.658 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:34:19.988 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:34:20.326 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:34:20.654 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:20.946 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:34:21.261 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:34:21.603 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:34:21.964 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:22.333 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:22.618 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:22.940 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:23.295 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:23.618 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:34:23.942 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:34:24.287 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:24.631 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:34:24.974 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:25.315 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:25.665 | Face: True | Eyes: True | Gaze: looking_left | Away: True
+16:34:25.958 | Face: True | Eyes: True | Gaze: looking_left | Away: True
+16:34:26.301 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:26.634 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:26.963 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:27.308 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:27.639 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:27.962 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:28.307 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:28.634 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:28.979 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:29.338 | Face: True | Eyes: True | Gaze: looking_left | Away: True
+16:34:29.676 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:30.011 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:30.319 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:30.639 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:30.976 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:31.296 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:31.637 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:31.971 | Face: True | Eyes: True | Gaze: looking_left | Away: True
+16:34:32.321 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:32.660 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:32.991 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:33.302 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:33.651 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:33.987 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:34.300 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:34.645 | Face: True | Eyes: True | Gaze: looking_left | Away: True
+16:34:34.988 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:35.322 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:35.672 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:36.070 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:36.513 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:36.954 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:37.356 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:34:37.694 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:34:38.223 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:38.560 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:38.923 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:39.234 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:34:39.606 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:34:39.917 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:34:40.237 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:34:40.561 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:34:40.894 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:41.232 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:41.571 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:41.910 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:42.240 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:42.571 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:42.909 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:43.246 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:43.565 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:43.903 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:44.251 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:44.577 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:44.907 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:45.245 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:45.579 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:45.921 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:46.225 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:34:46.568 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:34:46.907 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:47.245 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:47.590 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:47.917 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:48.252 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:48.592 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:48.911 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:49.248 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:49.580 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:49.916 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:50.255 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:50.588 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:34:50.929 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:51.261 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:51.582 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:34:51.916 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:52.252 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:52.585 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:52.921 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:53.267 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:53.602 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:53.938 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:54.269 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:54.591 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:54.937 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:55.269 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:55.590 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:55.935 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:56.238 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:56.567 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:34:56.884 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:34:57.232 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:34:57.594 | Face: True | Eyes: True | Gaze: looking_right | Away: True
+16:34:57.944 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:58.218 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:58.582 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:34:58.890 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:59.232 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:59.557 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:34:59.898 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:35:00.235 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:35:00.573 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:35:00.918 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:35:01.260 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:35:01.574 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:35:01.903 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:35:02.243 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:35:02.575 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:35:02.885 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:35:03.239 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:35:03.586 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:35:03.923 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:35:04.232 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:35:04.555 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:35:04.899 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:35:05.247 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:35:05.557 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:35:05.921 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:35:06.229 | Face: False | Eyes: False | Gaze: unknown | Away: False
+16:35:06.567 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:35:06.894 | Face: True | Eyes: True | Gaze: looking_center | Away: False
+16:35:07.224 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:35:07.572 | Face: True | Eyes: False | Gaze: unknown | Away: False
+16:35:07.904 | Face: True | Eyes: False | Gaze: unknown | Away: False
