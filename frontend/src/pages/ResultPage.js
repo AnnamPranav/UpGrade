@@ -5,67 +5,76 @@ function ResultPage() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  if (!location.state) {
-    return (
-      <div className="page">
-        <div className="container">
-          <h2>No result found</h2>
-          <p>Please complete an interview first.</p>
-          <button className="primary-btn" onClick={() => navigate("/")}>
-            Go Home
-          </button>
-        </div>
-      </div>
-    );
+  const result = location.state || {};
+
+  const finalScore = result.finalScore || 0;
+  const scores = result.scores || [];
+  const feedbacks = result.feedbacks || [];
+
+  let level = "Beginner";
+
+  if (finalScore >= 8) {
+    level = "Advanced";
+  } else if (finalScore >= 5) {
+    level = "Intermediate";
   }
-
-  const { finalScore = 0, scores = [], feedbacks = [] } = location.state;
-
-  const getLevel = () => {
-    if (finalScore >= 8) return "Advanced";
-    if (finalScore >= 4) return "Intermediate";
-    return "Basic";
-  };
 
   return (
     <div className="page">
-      <div className="container result-container">
+      <div className="container">
+
         <h1>Final Interview Result</h1>
 
-        <div className="score-card">
+        <div className="score-box">
           <h2>{finalScore.toFixed(2)} / 10</h2>
-          <p className="level">Skill Level: {getLevel()}</p>
+          <p>Skill Level: {level}</p>
         </div>
 
         <h3>Question-wise Scores</h3>
-        {scores.length > 0 ? (
-          scores.map((score, index) => (
-            <div className="result-item" key={index}>
-              <strong>Question {index + 1}</strong>
+
+        <div className="result-list">
+          {scores.map((score, index) => (
+            <div key={index} className="result-item">
+              <span>Question {index + 1}</span>
               <span>{score}/10</span>
             </div>
-          ))
-        ) : (
-          <p>No scores available.</p>
-        )}
+          ))}
+        </div>
 
         <h3>Feedback Per Question</h3>
-        {feedbacks.length > 0 ? (
-          feedbacks.map((feedback, index) => (
-            <div className="feedback-card" key={index}>
-              <strong>Question {index + 1}</strong>
+
+        <div className="feedback-list">
+          {feedbacks.map((feedback, index) => (
+            <div key={index} className="feedback-card">
+              <h4>Question {index + 1}</h4>
               <p>{feedback}</p>
             </div>
-          ))
-        ) : (
-          <p>No feedback available.</p>
-        )}
+          ))}
+        </div>
 
-        <div className="button-row">
-          <button className="primary-btn" onClick={() => navigate("/")}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "15px",
+            marginTop: "20px"
+          }}
+        >
+          <button
+            className="restart-btn"
+            onClick={() => navigate("/")}
+          >
             Restart Interview
           </button>
+
+          <button
+            className="restart-btn"
+            onClick={() => navigate("/dashboard")}
+          >
+            Go to Dashboard
+          </button>
         </div>
+
       </div>
     </div>
   );

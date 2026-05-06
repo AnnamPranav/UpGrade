@@ -7,7 +7,7 @@ function DashboardPage() {
         <h1>User Dashboard</h1>
 
         <p className="subtitle">
-          Dashboard structure prepared for future scaling.
+          Dashboard prepared for future scaling.
         </p>
 
         <div className="feedback-card">
@@ -16,9 +16,9 @@ function DashboardPage() {
           <ul style={{ textAlign: "left" }}>
             <li>Interview history</li>
             <li>Performance analytics</li>
-            <li>Multiple user sessions</li>
             <li>Skill tracking</li>
             <li>Resume upload</li>
+            <li>Multi-user support</li>
           </ul>
         </div>
       </div>
