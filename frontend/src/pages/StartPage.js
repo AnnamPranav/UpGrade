@@ -4,10 +4,13 @@ import { startInterview } from "../services/api";
 
 function StartPage() {
   const navigate = useNavigate();
+
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const handleStart = async () => {
     setLoading(true);
+    setError("");
 
     try {
       await new Promise((resolve) => setTimeout(resolve, 1000));
@@ -15,7 +18,9 @@ function StartPage() {
       const res = await startInterview();
       const data = res.data;
 
+      // Store session info
       localStorage.setItem("sessionId", data.sessionId);
+      localStorage.setItem("questionNumber", data.questionNumber);
 
       navigate("/interview", {
         state: {
@@ -25,7 +30,7 @@ function StartPage() {
         },
       });
     } catch (err) {
-      alert("Failed to start interview. Please check backend.");
+      setError("Something went wrong while starting the interview.");
     } finally {
       setLoading(false);
     }
@@ -35,20 +40,25 @@ function StartPage() {
     <div className="page">
       <div className="hero-card">
         <h1>AI Interview Platform</h1>
+
         <p className="subtitle">
-          Practice a 5-question mock interview and receive instant AI feedback.
+          Practice mock interviews with AI-generated questions and feedback.
         </p>
 
-        <div className="features">
-          <span>AI Questions</span>
-          <span>Adaptive Difficulty</span>
-          <span>Final Feedback</span>
-        </div>
+        {error && <div className="error-box">{error}</div>}
 
-        {loading && <div className="loader-box">Generating question...</div>}
+        {loading && (
+          <div className="loader-box">
+            Generating question...
+          </div>
+        )}
 
-        <button className="primary-btn" onClick={handleStart} disabled={loading}>
-          {loading ? "Generating..." : "Start Interview"}
+        <button
+          className="primary-btn"
+          onClick={handleStart}
+          disabled={loading}
+        >
+          {loading ? "Starting..." : "Start Interview"}
         </button>
       </div>
     </div>

@@ -209,3 +209,25 @@ textarea:disabled {
     font-size: 30px;
   }
 }
+.error-box {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+.secondary-btn {
+  padding: 12px 24px;
+  background: #e5e7eb;
+  color: #111827;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.button-row {
+  margin-top: 25px;
+}

@@ -10,13 +10,16 @@ function InterviewPage() {
 
   const [question, setQuestion] = useState(location.state?.question || "");
   const [questionNumber, setQuestionNumber] = useState(
-    location.state?.questionNumber || 1
+    Number(localStorage.getItem("questionNumber")) || 1
   );
+
   const [difficulty, setDifficulty] = useState(
     location.state?.difficulty || "medium"
   );
+
   const [answer, setAnswer] = useState("");
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const totalQuestions = 5;
   const progressPercent = (questionNumber / totalQuestions) * 100;
@@ -26,8 +29,11 @@ function InterviewPage() {
       <div className="page">
         <div className="container">
           <h2>Interview session not found</h2>
-          <p>Please start a new interview.</p>
-          <button className="primary-btn" onClick={() => navigate("/")}>
+
+          <button
+            className="primary-btn"
+            onClick={() => navigate("/")}
+          >
             Go Home
           </button>
         </div>
@@ -37,11 +43,12 @@ function InterviewPage() {
 
   const handleSubmit = async () => {
     if (!answer.trim()) {
-      alert("Answer cannot be empty.");
+      setError("Answer cannot be empty.");
       return;
     }
 
     setLoading(true);
+    setError("");
 
     try {
       await new Promise((resolve) => setTimeout(resolve, 1000));
@@ -50,7 +57,7 @@ function InterviewPage() {
       const data = res.data;
 
       if (data.completed) {
-        setAnswer("");
+        localStorage.removeItem("questionNumber");
 
         navigate("/result", {
           state: {
@@ -63,10 +70,16 @@ function InterviewPage() {
         setQuestion(data.nextQuestion);
         setQuestionNumber(data.nextQuestionNumber);
         setDifficulty(data.nextDifficulty || "medium");
+
+        localStorage.setItem(
+          "questionNumber",
+          data.nextQuestionNumber
+        );
+
         setAnswer("");
       }
     } catch (err) {
-      alert("Error submitting answer. Please try again.");
+      setError("Something went wrong while evaluating answer.");
     } finally {
       setLoading(false);
     }
@@ -96,7 +109,13 @@ function InterviewPage() {
           <p>{question}</p>
         </div>
 
-        {loading && <div className="loader-box">Evaluating answer...</div>}
+        {error && <div className="error-box">{error}</div>}
+
+        {loading && (
+          <div className="loader-box">
+            Evaluating answer...
+          </div>
+        )}
 
         <textarea
           placeholder="Type your answer here..."
